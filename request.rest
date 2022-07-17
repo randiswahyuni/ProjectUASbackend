@@ -1,0 +1,31 @@
+GET http://localhost:5000/mahasiswa
+
+###
+GET http://localhost:5000/mahasiswa/1
+
+###
+POST http://localhost:5000/mahasiswa 
+Content-Type: application/json
+
+{
+    "name": "Husnul",
+    "nim": "5707683",
+    "address": "Jakarta",
+    "gender": "Female"
+}
+
+###
+PATCH http://localhost:5000/mahasiswa/1
+Content-Type: application/json
+
+{
+    "name": "Randis", 
+    "nim": "200101085",
+    "address": "Bulu",
+    "gender": "Female"
+}
+###
+DELETE http://localhost:5000/mahasiswa/4
+
+
+   
